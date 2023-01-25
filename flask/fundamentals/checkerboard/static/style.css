@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.checkerboard:nth-child(odd) .square:nth-child(odd) {
+    background: orangered;
+}
+
+.checkerboard:nth-child(odd) .square:nth-child(even) {
+    background: black;
+}
+
+.checkerboard:nth-child(even) .square:nth-child(odd) {
+    background: black;
+}
+
+.checkerboard:nth-child(even) .square:nth-child(even) {
+    background: orangered;
+}
+
+.checkerboard {
+display: grid;
+grid-template-columns: repeat(auto-fill, 64px);
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+}
+
+.square {
+width: 64px;
+height: 64px;
+}

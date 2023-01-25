@@ -1,0 +1,23 @@
+body {
+    background-image: url("einar-ingi-sigmundsson-q7V9XMMhPoE-unsplash.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.translucent-form-overlay {
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    color: #fefefe;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radio-background{
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}

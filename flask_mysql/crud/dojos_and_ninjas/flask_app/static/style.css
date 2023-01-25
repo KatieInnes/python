@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.centered {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column-left, .column-right {
+    flex: 50%;
+}
+
+.dojos {
+    border: black 2px solid;
+}
+
+.links{
+    padding-top: 50px;
+}
+

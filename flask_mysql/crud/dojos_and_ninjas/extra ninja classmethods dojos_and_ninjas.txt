@@ -1,0 +1,16 @@
+
+    @classmethod
+    def ninja_view(cls, data):
+        query = "SELECT * FROM ninjas WHERE id = %(id)s;"
+        result = connectToMySQL('dojos_and_ninjas_schema').query_db(query, data)
+        return cls(result[0])
+
+    @classmethod
+    def edit(cls, data):
+        query = "UPDATE ninjas SET first_name=%(fname)s,last_name=%(lname)s,email=%(email)s,updated_at=NOW() WHERE id = %(id)s;"
+        return connectToMySQL('dojos_and_ninjas_schema').query_db( query, data )
+
+    @classmethod
+    def delete(cls, data):
+        query = "DELETE FROM ninjas WHERE id = %(id)s;"
+        return connectToMySQL('dojos_and_ninjas_schema').query_db( query, data )

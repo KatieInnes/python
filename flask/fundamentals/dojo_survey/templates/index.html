@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={{ url_for ("static", filename = "foundation.min.css") }}>
+    <link rel="stylesheet" type="text/css" href={{ url_for ("static", filename = "style.css") }}>
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="translucent-form-overlay">
+        <form action="/process" method="post">
+        <h3>Dojo Survey</h3>
+        <div class="row columns">
+            <label>Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="row columns">
+            <label>Dojo Location: </label>
+            <select name="location">
+                <option>-- Select a location --</option>
+                <option>Bellvue</option>
+                <option>Burbank</option>
+                <option>Chicago</option>
+                <option>Online</option>
+                <option>San Jose</option>
+            </select>
+        </div>
+        <div class="row columns">
+            <label>Favorite Language: </label>
+            <select name="language">
+                <option>-- Select a language --</option>
+                <option>C#</option>
+                <option>CSS</option>
+                <option>HTML</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+            </select>
+        </div>
+        <div class="row columns">
+            <label>What do you call sugary fizzy drinks?:</label>
+            <div class="radio-background">
+                <input type="radio" id="sodaChoice1" name="soda" value="Soda" />
+                <label for="sodaChoice1">Soda</label>
+                <input type="radio" id="sodaChoice2" name="soda" value="Pop" />
+                <label for="sodaChoice2">Pop</label>
+                <input type="radio" id="sodaChoice3" name="soda" value="Coke" />
+                <label for="sodaChoice3">Coke</label>
+            </div>
+        </div>
+        <div class="row columns">
+            <label>Comments: </label>
+            <textarea name="comment"></textarea>
+        </div>
+            <button type="submit" class="primary button expanded search-button">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>

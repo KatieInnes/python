@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+    font-size: 36px;
+}
+
+.correct{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    justify-content: center;
+    background-color: green;
+    height: 200px;
+    border: black 5px solid; 
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.incorrect{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    justify-content: center;
+    background-color: red;
+    height: 200px;
+    border: black 5px solid; 
+    color: white;
+    font-size: 24pt;
+    padding: 20px;
+}

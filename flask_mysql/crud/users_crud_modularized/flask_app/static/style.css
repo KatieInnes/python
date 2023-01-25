@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.centered {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.table{
+    border: black 2px solid;
+}
+
+.links{
+    padding-top: 50px;
+}
