@@ -7,6 +7,7 @@ characters = [
     Character("BeatleBop", "Betty", ["food", "sword", "silly stones"], can_teleport = True, position = Point(5,6), token = "B")
 ]
 
+# This is a comment
 is_active = True
 map = Map(characters)
 
